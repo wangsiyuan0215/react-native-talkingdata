@@ -6,7 +6,11 @@
 //  Copyright © 2016 erica. All rights reserved.
 //
 
+#if __has_include("RCTBridgeModule.h")
 #import "RCTBridgeModule.h"
+#else
+#import <React/RCTBridgeModule.h>
+#endif
 
 @interface RCTTalkingData : NSObject <RCTBridgeModule>
 
